@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://b7jvye71rmli1"]
 
 [ext_resource type="Texture2D" uid="uid://prd40re8j312" path="res://assets/game/objects/trees_stumps_and_bushes.png" id="1_gew61"]
+[ext_resource type="Shader" path="res://scenes/objects/shake.gdshader" id="1_v67fi"]
 [ext_resource type="Script" path="res://scenes/objects/trees/large_tree.gd" id="2_dsgma"]
 [ext_resource type="PackedScene" uid="uid://ci1pfguioke2a" path="res://scenes/components/hurt_component.tscn" id="3_qfxt3"]
 [ext_resource type="PackedScene" uid="uid://b6atbnm6esqb7" path="res://scenes/components/damage_component.tscn" id="4_258an"]
-[ext_resource type="Shader" path="res://scenes/objects/trees/tree.shake.gdshader" id="4_u6dhw"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_l6om6"]
 resource_local_to_scene = true
-shader = ExtResource("4_u6dhw")
+shader = ExtResource("1_v67fi")
 shader_parameter/shake_intensity = 0.0
 shader_parameter/shake_speed = 20.0
 

@@ -13,3 +13,8 @@ res://scenes/components/hurt_component.gd
 res://scenes/objects/trees/tree.shake.gdshader
 res://scenes/objects/trees/small_tree.gd
 res://scenes/objects/trees/large_tree.gd
+res://scenes/test/test_scene_objects_rocks.tscn
+res://scenes/objects/rocks/rock.tscn
+res://scenes/objects/rocks/rock.gd
+res://scenes/objects/rocks/stone.tscn
+res://scenes/objects/trees/shake.gdshader
