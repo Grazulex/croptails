@@ -1240,6 +1240,7 @@ radius = 4.12311
 radius = 2.82843
 
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_layer = 2
 script = ExtResource("1_rmg75")
 current_tool = 1

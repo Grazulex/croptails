@@ -18,3 +18,4 @@ res://scenes/objects/rocks/rock.tscn
 res://scenes/objects/rocks/rock.gd
 res://scenes/objects/rocks/stone.tscn
 res://scenes/objects/trees/shake.gdshader
+res://scenes/test/test_scene_tilemap_layer_z_sort.tscn

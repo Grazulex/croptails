@@ -515,6 +515,7 @@ texture = ExtResource("4_od67a")
 3:2/0 = 0
 3:3/size_in_atlas = Vector2i(1, 2)
 3:3/0 = 0
+3:3/0/y_sort_origin = 8
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l4618"]
 texture = ExtResource("5_q40vu")
@@ -525,6 +526,8 @@ texture = ExtResource("5_q40vu")
 3:3/0 = 0
 3:0/size_in_atlas = Vector2i(2, 2)
 3:0/0 = 0
+3:0/0/y_sort_origin = 7
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, 7, 3, 7, 3, 12, -3, 12)
 5:0/size_in_atlas = Vector2i(2, 2)
 5:0/0 = 0
 7:0/size_in_atlas = Vector2i(2, 2)
@@ -545,6 +548,7 @@ scenes/5/scene = ExtResource("10_0wo5k")
 scenes/6/scene = ExtResource("11_ry8it")
 
 [resource]
+physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Grass Terrain"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
