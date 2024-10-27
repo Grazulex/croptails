@@ -8,3 +8,8 @@ res://scenes/components/hit_component.tscn
 res://scenes/components/damage_component.tscn
 res://scenes/objects/trees/log.tscn
 res://scenes/components/collectable_component.tscn
+res://scenes/objects/trees/large_tree.tscn
+res://scenes/components/hurt_component.gd
+res://scenes/objects/trees/tree.shake.gdshader
+res://scenes/objects/trees/small_tree.gd
+res://scenes/objects/trees/large_tree.gd
