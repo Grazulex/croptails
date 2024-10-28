@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://belcqqbpdi7rr"]
+[gd_scene load_steps=13 format=3 uid="uid://belcqqbpdi7rr"]
 
 [ext_resource type="Theme" uid="uid://bvv3g1jinugxi" path="res://scenes/ui/game_ui_theme.tres" id="1_3q4v3"]
+[ext_resource type="Script" path="res://scenes/ui/tools_panel.gd" id="2_j7kar"]
 [ext_resource type="Texture2D" uid="uid://dt25airy45ytr" path="res://assets/game/objects/items/tools_n_meterial_items.png" id="2_m6n2q"]
 [ext_resource type="Texture2D" uid="uid://d3he3rnk7doyy" path="res://assets/game/objects/items/farming_plants_items.png" id="3_scqks"]
 
@@ -38,6 +39,7 @@ offset_right = 42.0
 offset_bottom = 45.0
 theme = ExtResource("1_3q4v3")
 theme_type_variation = &"DarkWoodPanel"
+script = ExtResource("2_j7kar")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
@@ -83,3 +85,9 @@ layout_mode = 2
 theme_type_variation = &"ToolButton"
 icon = SubResource("AtlasTexture_3ao4d")
 icon_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ToolAxe" to="." method="_on_tool_axe_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ToolTelling" to="." method="_on_tool_telling_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ToolWateringCan" to="." method="_on_tool_watering_can_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ToolCorn" to="." method="_on_tool_corn_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ToolTomato" to="." method="_on_tool_tomato_pressed"]
