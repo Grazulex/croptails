@@ -44,10 +44,10 @@ position = Vector2(259, 211)
 [node name="TomatoHarvest" parent="." instance=ExtResource("8_wpllf")]
 position = Vector2(325, 212)
 
-[node name="GameScreen" parent="." instance=ExtResource("9_n8viq")]
-
 [node name="Log2" parent="." instance=ExtResource("4_wr24q")]
 position = Vector2(318, 107)
 
 [node name="Log3" parent="." instance=ExtResource("4_wr24q")]
 position = Vector2(393, 93)
+
+[node name="GameScreen" parent="." instance=ExtResource("9_n8viq")]
