@@ -1,7 +1,8 @@
-NavigationAgent2D
 NavigationRegion2D
 Node2D
 Node
+NavigationAgent2D
+NavigationLink2D
 CollisionShape2D
 AnimatedSprite2D
 CharacterBody2D
