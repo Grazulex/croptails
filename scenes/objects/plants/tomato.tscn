@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://duky2iryeq6m7"]
+[gd_scene load_steps=10 format=3 uid="uid://duky2iryeq6m7"]
 
 [ext_resource type="Script" path="res://scenes/objects/plants/tomato.gd" id="1_2h3q1"]
 [ext_resource type="Texture2D" uid="uid://cnuvfvx0gp0j7" path="res://assets/game/objects/basic_plants.png" id="1_do64c"]
@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://beme52tjhvypl" path="res://scenes/objects/plants/flowering_particles.tscn" id="3_iax2g"]
 [ext_resource type="PackedScene" uid="uid://bhvbgvnohmapq" path="res://scenes/objects/plants/growth_cycle_component.tscn" id="4_kaa2j"]
 [ext_resource type="PackedScene" uid="uid://ci1pfguioke2a" path="res://scenes/components/hurt_component.tscn" id="5_pfo2w"]
+[ext_resource type="PackedScene" uid="uid://bjba7c2qfa0if" path="res://scenes/components/save_data_component.tscn" id="7_ooegr"]
+[ext_resource type="Resource" uid="uid://bwt17c7g243lb" path="res://resources/scene_data_resource.tres" id="8_qcumh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rhm3k"]
 size = Vector2(12, 7.5)
@@ -33,3 +35,6 @@ tool = 3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtComponent"]
 position = Vector2(0, -2)
 shape = SubResource("RectangleShape2D_rhm3k")
+
+[node name="SaveDataComponent" parent="." instance=ExtResource("7_ooegr")]
+save_data_resource = ExtResource("8_qcumh")
