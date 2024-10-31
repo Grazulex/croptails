@@ -4,7 +4,7 @@ extends NodeDataResource
 @export var node_name : String
 @export var scene_file_path : String
 
-func _save_date(node : Node2D) -> void:
+func _save_data(node : Node2D) -> void:
 	super._save_data(node)
 	
 	node_name = node.name

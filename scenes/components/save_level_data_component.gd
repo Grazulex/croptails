@@ -14,7 +14,7 @@ func save_node_data() -> void:
 	var nodes = get_tree().get_nodes_in_group("save_data_component")
 	game_data_resource = SaveGameDataResource.new()
 	if nodes != null:
-		for node in nodes:
+		for node: SaveDataComponent in nodes:
 			if node is SaveDataComponent:
 				var save_data_resource : NodeDataResource = node._save_data()
 				var save_final_resource = save_data_resource.duplicate()
